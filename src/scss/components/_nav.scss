@@ -1,0 +1,37 @@
+.nav {
+  @include tablet {
+    display: none;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    color: $black-text;
+    position: relative;
+    transition: opacity 200ms ease-in-out;
+
+    &:not(:last-child) {
+      margin-right: 45px;
+    }
+
+    &-active {
+      &::before {
+        content: '';
+        position: absolute;
+        bottom: -7px;
+        left: 50%;
+        transform: translateX(-50%);
+        border: 1.5px solid #fb9b69;
+        width: 20px;
+        height: 1.5px;
+      }
+    }
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
