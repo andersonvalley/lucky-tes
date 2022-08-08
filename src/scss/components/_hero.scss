@@ -62,6 +62,7 @@
     color: $gray-text;
     margin-bottom: 30px;
     max-width: 450px;
+    min-height: 200px;
 
     @include small-tablet {
       max-width: none;
@@ -97,6 +98,7 @@
     border: none;
     outline: none;
     padding: 22px 40px;
+    height: 62px;
     width: 100%;
     cursor: pointer;
     transition: all 200ms ease-in-out;
@@ -194,7 +196,6 @@
 
 .animation {
   width: 450px;
-  height: 450px;
   margin-right: 50px;
   position: relative;
   top: -40px;
